@@ -1,0 +1,27 @@
+These are the requirements for sign language detection
+opencv-python==4.7.0.68
+mediapipe==0.10.14
+scikit-learn==1.2.0
+
+step-1 data creation
+step-2 training the model
+step-3 working on the test cases
+
+matplotlib~=3.9.0
+numpy~=1.26.4
+
+module usages -
+pickle is used to get byte representations of the characters
+cv2 is part of openCV module that enables to capture things visible to a camera
+mediapipe is used for landmark detection
+scikit module is providing a classification model called random forest classifier
+ 
+
+training classifier summary -
+1. Loads the pre-processed data from a pickle file.
+2. Converts the data and labels to NumPy arrays.
+3. Splits the data into training and testing sets.
+4. Initializes and trains a RandomForestClassifier model.
+5. Evaluates the model's accuracy on the test set.
+6. Prints the accuracy.
+7. Saves the trained model to a pickle file for future use.
